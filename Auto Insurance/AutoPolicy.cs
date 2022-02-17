@@ -10,7 +10,7 @@ namespace Auto_Insurance
    {
       public int AccountNumber { get; set; } //policy account number
       public string MakeAndModel { get; set; } //car that policy applies to
-      public string State { get; set; } // two-letter state abbreviation
+       public string State; // two-letter state abbreviation
 
       //constructor
       public AutoPolicy(int accountNumber, string makeAndModel, string state)
@@ -19,6 +19,31 @@ namespace Auto_Insurance
          MakeAndModel = makeAndModel;
          State = state;
       }
+
+      public string state
+      {
+         get
+         {
+            return State;
+         }
+
+         set
+         {
+            if()
+            {
+
+            }
+
+            else
+            {
+
+            }
+
+         }
+      }
+
+
+
 
       // returns whether the state had no-fault insurance
       public bool IsNoFaultState
@@ -31,7 +56,14 @@ namespace Auto_Insurance
             //determine whether state has no-fault auto insurance
             switch (State) // get AutoPolicy object's state abbreviation
             {
-               case "MA": case "NJ": case "NY": case "PA":
+               case "CT": 
+               case "MA":
+               case "ME":
+               case "NH": 
+               case "NJ": 
+               case "NY": 
+               case "PA":
+               case "VT":
                   noFaultState = true;
                   break;
                default:
