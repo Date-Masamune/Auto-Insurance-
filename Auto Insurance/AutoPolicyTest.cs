@@ -22,7 +22,7 @@ namespace Auto_Insurance
          Console.WriteLine("The auto policy");
          Console.WriteLine($"Account #: {policy.AccountNumber};");
          Console.WriteLine($"Car: {policy.MakeAndModel};");
-         Console.WriteLine($"State {policy.State}; ");
+         Console.WriteLine($"State {policy.state}; ");
          Console.WriteLine($"({(policy.IsNoFaultState ? "is": " is not ")})");
          Console.WriteLine("a no-fault state\n");
          
